@@ -1,0 +1,11 @@
+Model Information:
+* title:	DAE Diorama- Eco House
+* source:	https://sketchfab.com/3d-models/dae-diorama-eco-house-d41ebc4086d44cf6842210c2a872dbb5
+* author:	noackvivi (https://sketchfab.com/noackvivi)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "DAE Diorama- Eco House" (https://sketchfab.com/3d-models/dae-diorama-eco-house-d41ebc4086d44cf6842210c2a872dbb5) by noackvivi (https://sketchfab.com/noackvivi) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

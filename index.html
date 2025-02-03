@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js Debug UI</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body { margin: 0; overflow: hidden; }
+        
+        #progress-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Scrollable Info Panel */
+        #info-panel {
+            position: fixed;
+            top: 10%;
+            left: 20px;
+            width: 250px;
+            height: 300px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-family: Arial, sans-serif;
+            border-radius: 8px;
+            overflow-y: auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+
+        #info-panel::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        #info-panel::-webkit-scrollbar-thumb {
+            background: #555;
+            border-radius: 5px;
+        }
+
+        #toggle-info {
+            position: fixed;
+            nav-down: 20px;
+            left: 40px;
+            background: #ff9800;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="progress-container">Loading Model...</div>
+    <h1>Jungle Hut</h1>
+
+    <button id="toggle-info">ℹ️ Show Info</button>
+    <div id="info-panel">
+        <h2>3D Model Info</h2>
+        <p>This is a Jungle Hut 3D model. You can interact with it using mouse controls.</p>
+        <p>Use the panel to adjust lights, position, and colors.</p>
+        <!-- <p>More details about the hut's design and features...</p> -->
+    </div>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.156.1/build/three.module.js",
+            "lil-gui": "https://cdn.jsdelivr.net/npm/lil-gui@0.18/+esm"
+        }
+    }
+    </script>
+
+    <script type="module" src="index.js"></script>
+    <script>
+        document.getElementById("toggle-info").addEventListener("click", function () {
+            const panel = document.getElementById("info-panel");
+            panel.style.display = panel.style.display === "none" ? "block" : "none";
+        });
+    </script>
+</body>
+</html>
